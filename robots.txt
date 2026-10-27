@@ -1,0 +1,1 @@
+User-agent: * Allow: / Sitemap: https://Phiwe-riri.github.io/WEDE_PART02/sitemap.xml

@@ -1,0 +1,159 @@
+/* ===== MAIN PAGE ===== */
+
+body {
+    margin: 0;
+    background-color: beige;
+    color: #55545c;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* ===== NAVIGATION ===== */
+
+header {
+    background-color: #35353d;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 75px;
+    height: 85px;
+    border: 3px solid #c9b9a8;
+    margin-right: 45px;
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    color: #c9b9a8;
+}
+
+
+/* ===== CONTENT ===== */
+
+main {
+    background-color: #f5f0e6;
+    text-align: center;
+    padding: 60px 30px;
+    min-height: 600px;
+}
+
+h1 {
+    color: #55545c;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #6f5b55;
+    font-size: 35px;
+}
+
+h3 {
+    color: #6f5b55;
+}
+
+p {
+    color: #100d0d;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* ===== IMAGES ===== */
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.gallery img {
+    width: 220px;
+    height: 190px;
+    object-fit: cover;
+}
+
+
+/* ===== PRODUCTS ===== */
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color:light burlywood;
+    border: 2px solid #c9b9a8;
+    padding: 20px;
+    width: 220px;
+}
+
+.product-card img {
+    width: 200px;
+    height: 190px;
+    object-fit: cover;
+}
+
+
+/* ===== NEWS ===== */
+
+.news-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.news-card {
+    background-color: #f5f0e6;
+    border: 2px solid #c9b9a8;
+    padding: 20px;
+    width: 250px;
+}
+
+
+/* ===== BUTTONS ===== */
+
+button {
+    background-color: #35353d;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-family: Georgia, "Times New Roman", serif;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6f5b55;
+}
+
+
+/* ===== FOOTER ===== */
+
+footer {
+    background-color: #35353d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    color: bisque;
+}

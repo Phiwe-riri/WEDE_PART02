@@ -1,42 +1,205 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Products and Services</title>
-    </head>
-    <! -- The body of the webpage>
-    <body style="background-color: lightslategrey;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop Clothing | Forever Cool T-Shirts, Vests and Hoodies</title>
+
+    <meta name="description"
+          content="Explore Forever Cool clothing, including stylish vests, T-shirts and hoodies. Browse product descriptions and prices, and enquire about availability.">
+
+    <meta name="keywords"
+          content="Forever Cool, clothing shop, vests, T-shirts, hoodies, affordable fashion, clothing prices">
+
+    <meta name="robots" content="index, follow">
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #fff;
+            color: #222;
+            font-family: Georgia, serif;
+        }
+
+        header {
+            background-color: #222;
+            padding: 25px;
+            display: flex;
+            align-items: center;
+        }
+
+        header img {
+            width: 75px;
+            height: 85px;
+            border: 3px solid #887355;
+            margin-right: 40px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 18px;
+            font-size: 17px;
+        }
+
+        nav a:hover {
+            color: #887355;
+        }
+
+        main {
+            text-align: center;
+            padding: 50px 30px;
+        }
+
+        h1 {
+            font-size: 45px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .search-box {
+            margin: 30px auto;
+        }
+
+        #productSearch {
+            width: 80%;
+            max-width: 450px;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #887355;
+            border-radius: 5px;
+        }
+
+        .product-list {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 35px;
+        }
+
+        .product-card {
+            width: 250px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #faf7f2;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-card h2 {
+            font-size: 25px;
+        }
+
+        .price {
+            color: #755b3e;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #222;
+            color: bisque;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            header img {
+                margin-right: 0;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
     <header>
+        <img src="Images/Logo.PNG" alt="Forever Cool clothing brand logo">
+
         <nav>
-            <img src="Images/Logo.PNG" style=  "width:75px; height:85px; border: 3px solid #887355;">
-        <a href="Home.html" style="color: rgb(222, 193, 176);">Home Page|</a>
-        <a href="About us.html" style="color: saddlebrown;">About us|</a>
-        <a href="Products and Services.html" style="color: brown;"> Products and Services|</a>
-        <a href="Images.html" style="color: sienna;">Images|</a>
-        <a href="News.html" style="color: rgb(222, 197, 176);">News and Updates|</a>
-        <a href="Contacts.html" style="color: rgb(222, 198, 176);">Contact us|</a>
+            <a href="Home.html">Home Page</a>
+            <a href="About us.html">About Us</a>
+            <a href="Products and Services.html">Products and Services</a>
+            <a href="Images.html">Images</a>
+            <a href="News.html">News and Updates</a>
+            <a href="Contact.html">Contact Us</a>
+            <a href="enquiry.html">Product Enquiry</a>
         </nav>
     </header>
+
     <main>
-        <h1>Products</h1>
-       <p>T-shirts,
-        Hoodies,
-        Jackets,
-        Caps
-       </p>
-       <h2>Services</h2>
-       <p>
-        Online shopping,
-        Secure checkout,
-        Customer support,
-        Order tracking
-       </p>
-       
+        <h1>OUR PRODUCTS AND SERVICES</h1>
 
+        <p>Discover stylish clothing for modern people.</p>
 
+        <div class="search-box">
+            <input
+                type="text"
+                id="productSearch"
+                placeholder="Search for a product..."
+                aria-label="Search products">
+        </div>
 
-            <footer>
-            &copy;St10506994 #Forever Cool clothing brand</footer>
+        <div class="product-list" id="productList">
 
+            <div class="product-card">
+                <img src="Images/A.jpg" alt="Forever Cool vest">
+                <h2>Vest</h2>
+                <p>Comfortable and stylish vests for everyday wear.</p>
+                <p class="price">R299</p>
+            </div>
+
+            <div class="product-card">
+                <img src="Images/B.jpg" alt="Forever Cool T-shirt">
+                <h2>T-Shirts</h2>
+                <p>Warm and fashionable T-Shirts for a modern look.</p>
+                <p class="price">R499</p>
+            </div>
+
+            <div class="product-card">
+                <img src="Images/C.jpg" alt="Forever Cool hoodie">
+                <h2>Hoodies</h2>
+                <p>Warm and fashionable hoodies for a modern look.</p>
+                <p class="price">R599</p>
+            </div>
+
+        </div>
+
+        <p id="noProducts" hidden>
+            No products found. Try another search.
+        </p>
     </main>
-    </body>
+
+    <footer>
+        &copy; 2026 Forever Cool Clothing Brand
+    </footer>
+
+    <script src="JavaScript/script.js"></script>
+
+</body>
 </html>

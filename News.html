@@ -1,37 +1,230 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title> News</title>
-    </head>
-    <! -- The body of the webpage>
-    <body style="background-color: lightslategrey;">
-    <header>
-        <nav>
-            <img src="Images/Logo.PNG" style=  "width:75px; height:85px; border: 3px solid #887355;">
-        <a href="Home.html" style="color: rgb(222, 193, 176);">Home Page|</a>
-        <a href="About us.html" style="color: saddlebrown;">About us|</a>
-        <a href="Products and Services.html" style="color: brown;"> Products and Services|</a>
-        <a href="Images.html" style="color: sienna;">Images|</a>
-        <a href="News.html" style="color: rgb(222, 197, 176);">News and Updates|</a>
-        <a href="Contacts.html" style="color: rgb(222, 198, 176);">Contact us|</a>
-        </nav>
-    </header>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fashion News and Updates | Forever Cool</title>
+
+    <meta name="description"
+          content="Stay updated with Forever Cool clothing news, fashion trends, new collections, upcoming styles and fashion accessories.">
+
+    <meta name="keywords"
+          content="Forever Cool, fashion news, clothing updates, new clothing collections, fashion trends, clothing accessories">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #f5f0e6;
+            color: #222;
+            font-family: Georgia, serif;
+        }
+
+        nav {
+            background-color: #3b3b3b;
+            padding: 25px;
+            text-align: center;
+            overflow: auto;
+        }
+
+        nav img {
+            width: 75px;
+            height: 85px;
+            border: 3px solid #f5f0e6;
+            float: left;
+        }
+
+        nav a {
+            display: inline-block;
+            color: #f5f0e6;
+            text-decoration: none;
+            margin: 20px;
+        }
+
+        nav a:hover {
+            color: #c5a77a;
+        }
+
+        main {
+            text-align: center;
+            padding: 60px 25px;
+        }
+
+        h1 {
+            font-size: 45px;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-top: 55px;
+        }
+
+        main p {
+            font-size: 19px;
+        }
+
+        #newsSearch {
+            width: 80%;
+            max-width: 450px;
+            padding: 12px;
+            margin: 25px 0;
+            font-size: 16px;
+            border: 1px solid #887355;
+            border-radius: 5px;
+        }
+
+        .news-list {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .news-card {
+            width: 250px;
+            padding: 18px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .news-card img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+
+        .news-card h3 {
+            font-size: 22px;
+        }
+
+        .news-card p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        #noNews {
+            font-size: 18px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #3b3b3b;
+            color: #f5f0e6;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            nav img {
+                float: none;
+                display: block;
+                margin: 0 auto 15px;
+            }
+
+            nav a {
+                margin: 8px;
+            }
+
+            h1 {
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <img src="Images/Logo.PNG"
+             alt="Forever Cool clothing brand logo">
+
+        <a href="Home.html">Home Page</a>
+        <a href="About us.html">About Us</a>
+        <a href="Products and Services.html">Products and Services</a>
+        <a href="Images.html">Images</a>
+        <a href="News.html">News and Updates</a>
+        <a href="Contact.html">Contact Us</a>
+        <a href="enquiry.html">Product Enquiry</a>
+    </nav>
+
+    <!-- Main content -->
     <main>
-       <h1>NEWS</h1>
-       <p>Get the latest updates,new drops, exclusive offers, and brand announcements all in one place.</p>
 
-       <h2>COMING SOON</h2>
-       <p>New styles are on the way.</p>
+        <h1>NEWS AND UPDATES</h1>
 
-       <h3>STAY UPDATED</h3>
-       <p>Follow Forever Cool on social media for latest drops.</p>
+        <p>Stay updated with the latest from Forever Cool.</p>
 
+        <h2>LATEST NEWS</h2>
 
+        <!-- News search -->
+        <input
+            type="text"
+            id="newsSearch"
+            placeholder="Search news and updates..."
+            aria-label="Search news">
 
+        <!-- News cards -->
+        <div class="news-list" id="newsList">
 
-            <footer>
-            &copy;St10506994 #Forever Cool clothing brand</footer>
+            <div class="news-card">
+                <img src="Images/A.jpg" alt="Clothing from the Forever Cool collection">
+                <h3>New Clothing Collection</h3>
+                <p>Discover stylish clothing designed for modern people.</p>
+            </div>
+
+            <div class="news-card">
+                <img src="Images/B.jpg" alt="Fashion styles from Forever Cool">
+                <h3>Latest Fashion Trends</h3>
+                <p>Explore new styles and find inspiration for your everyday look.</p>
+            </div>
+
+            <div class="news-card">
+                <img src="Images/C.jpg" alt="Forever Cool clothing range">
+                <h3>Our Brand</h3>
+                <p>Forever Cool brings together comfort, style and individuality.</p>
+            </div>
+
+            <div class="news-card">
+                <img src="Images/D.jpg" alt="Clothing styles featured by Forever Cool">
+                <h3>Upcoming Styles</h3>
+                <p>Keep an eye out for more clothing styles coming soon.</p>
+            </div>
+
+            <div class="news-card">
+                <img src="Images/E.jpg" alt="Fashion cap and accessories">
+                <h3>Fashion Accessories</h3>
+                <p>Complete your look with fashionable accessories.</p>
+            </div>
+
+        </div>
+
+        <p id="noNews" hidden>
+            No news found. Try another search.
+        </p>
+
+        <h2>COMING SOON</h2>
+
+        <p>
+            New styles, exclusive offers and brand announcements are on the way.
+        </p>
 
     </main>
-    </body>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2026 Forever Cool Clothing Brand
+    </footer>
+
+    <!-- Connect JavaScript -->
+    <script src="JavaScript/script.js"></script>
+
+</body>
 </html>

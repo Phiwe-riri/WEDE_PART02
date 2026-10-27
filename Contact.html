@@ -1,38 +1,121 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title> Contact Us</title>
-    </head>
-    <! -- The body of the webpage>
-    <body style="background-color: lightslategrey;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Forever Cool | Clothing Enquiries and Support</title>
+
+    <meta name="description"
+          content="Contact Forever Cool for clothing enquiries, product information, availability questions and customer support. Send us a message through our contact form.">
+
+    <meta name="keywords"
+          content="Forever Cool contact, clothing enquiries, fashion customer support, product information">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
     <header>
+        <h1>FOREVER COOL</h1>
+        <p>Modern clothing for modern people</p>
+
         <nav>
-            <img src="Images/Logo.PNG" style=  "width:75px; height:85px; border: 3px solid #887355;">
-        <a href="Home.html" style="color: rgb(222, 193, 176);">Home Page|</a>
-        <a href="About us.html" style="color: saddlebrown;">About us|</a>
-        <a href="Products and Services.html" style="color: brown;"> Products and Services|</a>
-        <a href="Images.html" style="color: sienna;">Images|</a>
-        <a href="News.html" style="color: rgb(222, 197, 176);">News and Updates|</a>
-        <a href="Contacts.html" style="color: rgb(222, 198, 176);">Contact us|</a>
+            <a href="Home.html">Home</a>
+            <a href="Products and Services.html">Products</a>
+            <a href="About us.html">About Us</a>
+            <a href="Images.html">Gallery</a>
+            <a href="News.html">News</a>
+            <a href="Contact.html">Contact</a>
+            <a href="enquiry.html">Product Enquiry</a>
         </nav>
     </header>
-    <main>
-       <h1>Contact us</h1>
-       <p> We'd love to hear from you.</p>
-       <p>Have a question about an order,product,or deliver? Get in touch with Forever Cool team and we'll be happy to help.</p>
 
-       <h3>Email</h3>
-       <p>info@forevercool.co.za</p>
-       <h3>Phone</h3>
-       <p>+27 12 345 6789</p>
-       <h3>Business Hours</h3>
-       <p>Monday - Friday, 9h00 - 17h00</p>
+    <main class="contact-section">
 
+        <h2>Contact Us</h2>
 
+        <p>
+            Have a question about our products?
+            Complete the form below and get in touch with us.
+        </p>
 
-            <footer>
-            &copy;St10506994 #Forever Cool clothing brand</footer>
+        <div class="contact-info">
+            <h3>Our Contact Details</h3>
+            <p><strong>Email:</strong> info@forevercool.co.za</p>
+            <p><strong>Phone:</strong> +27 12 345 6789</p>
+            <p><strong>Business Hours:</strong> Monday–Friday, 09:00–17:00</p>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+
+            <label for="name">Full Name</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                autocomplete="name"
+                required
+            >
+
+            <label for="email">Email Address</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+                autocomplete="email"
+                required
+            >
+
+            <label for="phone">Phone Number</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                autocomplete="tel"
+            >
+
+            <label for="subject">Subject</label>
+            <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Enter the subject"
+                required
+            >
+
+            <label for="message">Your Message</label>
+            <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Write your message here"
+                required
+            ></textarea>
+
+            <button type="submit">Send Message</button>
+
+            <p class="form-message"
+               id="formMessage"
+               role="status"
+               aria-live="polite"></p>
+
+        </form>
 
     </main>
-    </body>
+
+    <footer>
+        <p>&copy; 2026 Forever Cool. All rights reserved.</p>
+    </footer>
+
+    <script src="JavaScript/script.js"></script>
+
+</body>
 </html>
