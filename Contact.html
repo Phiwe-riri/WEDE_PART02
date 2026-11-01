@@ -16,23 +16,43 @@
     <meta name="robots" content="index, follow">
 
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="JavaScript/script.js" defer></script>
 </head>
 
 <body>
 
+    <!-- Navigation bar -->
     <header>
-        <h1>FOREVER COOL</h1>
-        <p>Modern clothing for modern people</p>
 
-        <nav>
-            <a href="Home.html">Home</a>
-            <a href="Products and Services.html">Products</a>
-            <a href="About us.html">About Us</a>
-            <a href="Images.html">Gallery</a>
-            <a href="News.html">News</a>
-            <a href="Contact.html">Contact</a>
-            <a href="enquiry.html">Product Enquiry</a>
-        </nav>
+        <div class="brand">
+
+            <img src="Images/Logo.PNG"
+                 alt="Forever Cool Logo"
+                 class="logo">
+
+            <div>
+                <h1>FOREVER COOL</h1>
+                <p>Modern clothing for modern people</p>
+            </div>
+
+        </div>
+
+        <details class="mobile-navigation">
+
+            <summary>☰ Menu</summary>
+
+            <nav>
+                <a href="Home.html">Home</a>
+                <a href="About us.html">About Us</a>
+                <a href="Products and Services.html">Products</a>
+                <a href="Images.html">Gallery</a>
+                <a href="News.html">News</a>
+                <a href="Contact.html" aria-current="page">Contact</a>
+                <a href="enquiry.html">Enquiry</a>
+            </nav>
+
+        </details>
+
     </header>
 
     <main class="contact-section">
@@ -44,16 +64,24 @@
             Complete the form below and get in touch with us.
         </p>
 
+        <!-- Contact Details -->
         <div class="contact-info">
+
             <h3>Our Contact Details</h3>
+
             <p><strong>Email:</strong> info@forevercool.co.za</p>
+
             <p><strong>Phone:</strong> +27 12 345 6789</p>
+
             <p><strong>Business Hours:</strong> Monday–Friday, 09:00–17:00</p>
+
         </div>
 
+        <!-- Contact Form -->
         <form class="contact-form" id="contactForm">
 
             <label for="name">Full Name</label>
+
             <input
                 type="text"
                 id="name"
@@ -64,6 +92,7 @@
             >
 
             <label for="email">Email Address</label>
+
             <input
                 type="email"
                 id="email"
@@ -74,6 +103,7 @@
             >
 
             <label for="phone">Phone Number</label>
+
             <input
                 type="tel"
                 id="phone"
@@ -83,6 +113,7 @@
             >
 
             <label for="subject">Subject</label>
+
             <input
                 type="text"
                 id="subject"
@@ -92,6 +123,7 @@
             >
 
             <label for="message">Your Message</label>
+
             <textarea
                 id="message"
                 name="message"
@@ -111,11 +143,13 @@
 
     </main>
 
+    <!-- Footer -->
     <footer>
+
         <p>&copy; 2026 Forever Cool. All rights reserved.</p>
+
     </footer>
 
-    <script src="JavaScript/script.js"></script>
-
 </body>
+
 </html>
