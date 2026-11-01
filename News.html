@@ -17,6 +17,8 @@
 
     <link rel="stylesheet" href="CSS/style.css">
 
+    <script src="JavaScript/script.js" defer></script>
+
     <style>
         body {
             margin: 0;
@@ -25,37 +27,12 @@
             font-family: Georgia, serif;
         }
 
-        nav {
-            background-color: #3b3b3b;
-            padding: 25px;
-            text-align: center;
-            overflow: auto;
-        }
-
-        nav img {
-            width: 75px;
-            height: 85px;
-            border: 3px solid #f5f0e6;
-            float: left;
-        }
-
-        nav a {
-            display: inline-block;
-            color: #f5f0e6;
-            text-decoration: none;
-            margin: 20px;
-        }
-
-        nav a:hover {
-            color: #c5a77a;
-        }
-
         main {
             text-align: center;
             padding: 60px 25px;
         }
 
-        h1 {
+        main h1 {
             font-size: 45px;
         }
 
@@ -122,18 +99,12 @@
         }
 
         @media (max-width: 768px) {
-            nav img {
-                float: none;
-                display: block;
-                margin: 0 auto 15px;
-            }
-
-            nav a {
-                margin: 8px;
-            }
-
-            h1 {
+            main h1 {
                 font-size: 35px;
+            }
+
+            main {
+                padding: 40px 15px;
             }
         }
     </style>
@@ -142,18 +113,38 @@
 <body>
 
     <!-- Navigation -->
-    <nav>
-        <img src="Images/Logo.PNG"
-             alt="Forever Cool clothing brand logo">
+    <header>
 
-        <a href="Home.html">Home Page</a>
-        <a href="About us.html">About Us</a>
-        <a href="Products and Services.html">Products and Services</a>
-        <a href="Images.html">Images</a>
-        <a href="News.html">News and Updates</a>
-        <a href="Contact.html">Contact Us</a>
-        <a href="enquiry.html">Product Enquiry</a>
-    </nav>
+        <div class="brand">
+
+            <img src="Images/Logo.PNG"
+                 alt="Forever Cool Logo"
+                 class="logo">
+
+            <div>
+                <h1>FOREVER COOL</h1>
+                <p>Modern clothing for modern people</p>
+            </div>
+
+        </div>
+
+        <details class="mobile-navigation">
+
+            <summary>☰ Menu</summary>
+
+            <nav>
+                <a href="Home.html">Home</a>
+                <a href="About us.html">About Us</a>
+                <a href="Products and Services.html">Products</a>
+                <a href="Images.html">Gallery</a>
+                <a href="News.html" aria-current="page">News</a>
+                <a href="Contact.html">Contact</a>
+                <a href="enquiry.html">Enquiry</a>
+            </nav>
+
+        </details>
+
+    </header>
 
     <!-- Main content -->
     <main>
@@ -222,9 +213,6 @@
     <footer>
         &copy; 2026 Forever Cool Clothing Brand
     </footer>
-
-    <!-- Connect JavaScript -->
-    <script src="JavaScript/script.js"></script>
 
 </body>
 </html>
